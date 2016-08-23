@@ -49,19 +49,19 @@ module.exports = {
         loader: 'file?name=img/[hash].[name].[ext]'
       },
       {
-        test: /\.svg.*/,
+        test: /\.svg/,
         loader:'url?limit=10000&mimetype=image/svg+xml&name=fonts/[name].[ext]',
       },
       {
-        test: /\.woff.*/,
-        loader: 'fule?name=fonts/[name].[ext]',
+        test: /\.woff/,
+        loader: 'file?name=fonts/[name].[ext]',
       },
       {
-        test: /\.[ot]tf.*/,
+        test: /\.[ot]tf/,
         loader: 'url?limit=10000&mimetype=application/octet-stream&name=fonts/[name].[ext]'
       },
       {
-        test: /\.eot.*/,
+        test: /\.eot/,
         loader:'url?limit=10000&mimetype=application/vnd.ms-fontobject&name=fonts/[name].[ext]'
       }
     ]
