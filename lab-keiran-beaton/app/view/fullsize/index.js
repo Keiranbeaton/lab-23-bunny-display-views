@@ -15,7 +15,7 @@ imageApp.controller('FullsizeController', ['$routeParams', '$rootScope', '$locat
   };
 
   let id = Number.parseInt($routeParams.id);
-  if(!this.idValidId(id)) {
+  if(!this.isValidId(id)) {
     $location.path('/error');
   }
   this.image = this.images[id-1];

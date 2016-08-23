@@ -46,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|gif|png)$/,
-        loader: 'file?name=img/[hash].[name].[ext]'
+        loader: 'file?name=img/[hash].[ext]'
       },
       {
         test: /\.svg/,
