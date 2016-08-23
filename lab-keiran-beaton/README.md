@@ -4,6 +4,8 @@
 For this project we used Angular to build different views of the images we used (images of Lance Stephenson in my case), and used angular routing to navigate between those views.
 
 ## Running the app
+First, clone down the repo and run `npm install` in the command line to install all the necessary dependencies
+
 To run the app, type `npm run watch` in the command line. This will create the bundle and serve the app on localhost:8080
 
 To navigate to different views, simply click around the site.
@@ -14,4 +16,10 @@ To view every picture as a thumbnail, click the thumbnail tab in the nav bar. Th
 To navigate directly to any fullsize page, go to localhost:8080/#/fullsize/:id. Each picture has an id that corresponds to it, and they are just 1, 2, 3 and 4.
 
 ## BONUS POINT
-Putting in another router, for instance localhost:8080/#/fullsize/5, will take you to an error view. 
+Putting in another router, for instance localhost:8080/#/fullsize/5, will take you to an error view.
+
+## Testing
+
+To run tests run `karma start` in the command line. This will run the tests from test/controller-test.js
+
+To run the linter run `npm run lint` in the command line. This will lint every javascript file in the app.

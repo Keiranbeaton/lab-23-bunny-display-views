@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Tue Aug 23 2016 10:02:56 GMT-0700 (Pacific Daylight Time)
 
-let webpackConfig = require('webpack.config.js');
+var webpackConfig = require('./webpack.config.js');
 webpackConfig.entry = {};
 
 module.exports = function(config) {
@@ -33,6 +33,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'app/entry.js': ['webpack'],
+      'test/*-test.js': ['babel']
     },
 
 
