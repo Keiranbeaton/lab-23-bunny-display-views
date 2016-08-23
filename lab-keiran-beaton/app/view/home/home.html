@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="list-group col-md-6 col-md-offset-3">
-      <a ng-repeat="img in hc.images" href="#/fullsize/{{img.id}}" class="list-group-item">{{img.description}}<br></a>
+      <div ng-repeat="img in hc.images" class="list-group-item">
+        <h2>{{img.title}}<br></h2>
+        <p>{{img.description}}</p>
+        <p><a href="#/fullsize/{{img.id}}" >{{img.url}}<br></a></p>
+      </div>
     </div>
   </div>
 </div>
